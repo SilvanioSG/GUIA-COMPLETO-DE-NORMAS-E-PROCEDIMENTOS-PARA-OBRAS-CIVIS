@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Normas e Procedimentos da Construção Civil (Edição Robusta)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #1e2b37;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+            border-bottom: 4px solid rgb(39, 98, 141);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .foto-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .foto-area img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgb(39, 98, 141);
+            background: #ccc;
+        }
+
+        .nome-titulo h1 {
+            font-size: 1.8rem;
+            color: rgb(39, 98, 141);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        .nome-titulo p {
+            font-size: 1rem;
+            color: #2c3e50;
+            font-style: italic;
+        }
+
+        .contato-whatsapp a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+        }
+
+        .contato-whatsapp a:hover {
+            background-color: #20b858;
+            transform: scale(1.02);
+        }
+
+        .print-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background-color: transparent;
+            color: rgb(39, 98, 141);
+            border: 1px solid rgb(39, 98, 141);
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        .print-button:hover {
+            background-color: rgb(39, 98, 141);
+            color: white;
+        }
+
+        .print-button svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .main-title {
+            text-align: center;
+            margin: 40px 0 30px;
+        }
+
+        .main-title h2 {
+            font-size: 2.2rem;
+            color: rgb(39, 98, 141);
+            border-bottom: 3px solid rgb(39, 98, 141);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .main-title p {
+            margin-top: 10px;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .guia-section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 6px solid rgb(39, 98, 141);
+            transition: transform 0.2s;
+        }
+
+        .guia-section:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 20px rgba(39, 98, 141, 0.1);
+        }
+
+        .guia-section h3 {
+            font-size: 1.8rem;
+            color: rgb(39, 98, 141);
+            margin-bottom: 20px;
+            border-bottom: 2px dashed #ccc;
+            padding-bottom: 8px;
+        }
+
+        .guia-section h4 {
+            font-size: 1.3rem;
+            color: #1e3c5a;
+            margin: 20px 0 10px;
+        }
+
+        .guia-section h5 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin: 15px 0 5px;
+            font-weight: 600;
+        }
+
+        .guia-section ul, .guia-section ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .guia-section li {
+            margin-bottom: 5px;
+        }
+
+        .guia-section p {
+            margin-bottom: 15px;
+        }
+
+        .norma-destaque {
+            background-color: #e9f0f7;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-family: 'Courier New', monospace;
+            color: rgb(39, 98, 141);
+            font-weight: 600;
+            display: inline-block;
+            margin: 5px 5px 0 0;
+        }
+
+        .badge-nbr {
+            background-color: rgb(39, 98, 141);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .cronograma-box {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid rgb(39, 98, 141);
+            margin-top: 20px;
+        }
+
+        .cronograma-box ol {
+            columns: 2;
+            column-gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .cronograma-box ol {
+                columns: 1;
+            }
+        }
+
+        footer {
+            background-color: #1e2b37;
+            color: #f0f4f8;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 5px solid rgb(39, 98, 141);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-content a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 8px 16px;
+            border-radius: 30px;
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .footer-content a:hover {
+            color: rgb(39, 98, 141);
+            background-color: white;
+        }
+
+        .copyright {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 700px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .foto-area {
+                flex-direction: column;
+            }
+            .contato-whatsapp {
+                width: 100%;
+            }
+            .contato-whatsapp a {
+                justify-content: center;
+            }
+            .print-button {
+                margin-top: 10px;
+            }
+        }
+
+        .indice-rapido {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border: 1px solid rgb(39, 98, 141);
+        }
+
+        .indice-rapido h4 {
+            color: rgb(39, 98, 141);
+            margin-bottom: 15px;
+        }
+
+        .indice-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .indice-grid a {
+            background-color: #eef3f9;
+            color: rgb(39, 98, 141);
+            padding: 8px 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid transparent;
+            transition: 0.2s;
+        }
+
+        .indice-grid a:hover {
+            background-color: rgb(39, 98, 141);
+            color: white;
+            border-color: rgb(39, 98, 141);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: rgb(39, 98, 141);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            z-index: 1000;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: #1e4b6e;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(39, 98, 141, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 24px;
+            }
+        }
+
+        .tabela-indicadores {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        .tabela-indicadores th {
+            background-color: rgb(39, 98, 141);
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        .tabela-indicadores td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        .tabela-indicadores tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .exemplo-formula {
+            background-color: #f9f2e0;
+            padding: 10px 15px;
+            border-left: 4px solid rgb(39, 98, 141);
+            font-family: monospace;
+            margin: 10px 0;
+        }
+
+        .organograma {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .org-level {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .org-item {
+            background: white;
+            border: 2px solid rgb(39, 98, 141);
+            border-radius: 8px;
+            padding: 15px 20px;
+            min-width: 180px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .org-item strong {
+            display: block;
+            font-size: 1.1rem;
+            color: rgb(39, 98, 141);
+            margin-bottom: 5px;
+        }
+        .org-item span {
+            font-size: 0.9rem;
+            color: #2c3e50;
+        }
+        .org-connector {
+            width: 2px;
+            height: 20px;
+            background: rgb(39, 98, 141);
+            margin: 0 auto;
+        }
+        .org-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+        }
+        .org-category {
+            font-weight: 600;
+            color: #1e3c5a;
+            margin: 20px 0 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .gantt-container {
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .gantt-tabela {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        .gantt-tabela th {
+            background-color: rgb(39, 98, 141);
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .gantt-tabela td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            vertical-align: middle;
+        }
+        .gantt-barra {
+            background-color: rgb(39, 98, 141);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            text-align: center;
+            display: inline-block;
+            min-width: 30px;
+        }
+        .gantt-atividade {
+            font-weight: 500;
+        }
+        .gantt-duracao {
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="foto-area">
+                <img src="Executivo_Silvanio_Gestor.PNG" alt="Silvanio Gois" onerror="this.src='https://via.placeholder.com/80x80?text=Silvanio'">
+                <div class="nome-titulo">
+                    <h1>Silvanio Gois</h1>
+                    <p>Gestão Estratégica e Operacional de Obras</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+                <div class="contato-whatsapp">
+                    <a href="https://wa.me/5513988301094" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.077 4.928C17.191 3.041 14.683 2 12.006 2 6.798 2 2.548 6.193 2.54 11.393c-.003 1.749.456 3.457 1.328 4.984L2.25 21.75l5.428-1.479c1.465.817 3.115 1.248 4.814 1.25h.004c5.186 0 9.456-4.195 9.464-9.396.004-2.51-.972-4.874-2.859-6.762zM12.034 19.79h-.003c-1.499 0-2.967-.404-4.24-1.163l-.304-.184-3.218.877.865-3.148-.2-.317a8.266 8.266 0 0 1-1.315-4.443c.007-4.562 3.718-8.265 8.288-8.265 2.212 0 4.291.863 5.855 2.43a8.18 8.18 0 0 1 2.426 5.82c-.007 4.56-3.718 8.262-8.284 8.262zm4.539-6.186c-.248-.124-1.466-.723-1.694-.806-.227-.082-.393-.124-.558.124-.166.248-.642.806-.787.971-.145.166-.29.186-.538.062-.933-.435-1.544-.776-2.157-1.324-.162-.146-.307-.304-.452-.472.225-.266.427-.55.604-.854.15-.26.2-.446.3-.744.1-.298.05-.558-.025-.774-.075-.216-.558-1.346-.766-1.846-.202-.486-.408-.42-.558-.428-.145-.008-.31-.01-.476-.01s-.435.062-.663.31c-.228.248-.87.85-.87 2.074s.891 2.406 1.015 2.574c.124.166 1.74 2.656 4.214 3.642.588.234 1.048.374 1.407.48.592.174 1.13.15 1.557.09.475-.067 1.462-.597 1.668-1.174.206-.577.206-1.071.144-1.174-.062-.103-.228-.166-.476-.29z"/>
+                        </svg>
+                        Contato
+                    </a>
+                </div>
+                <button class="print-button" onclick="window.print()" title="Imprimir guia">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 8H5v-3h14v3zm2-4c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v7h16v-7zM4 15h16v2H4v-2z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                    Imprimir
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-title">
+            <h2>GUIA COMPLETO DE NORMAS E PROCEDIMENTOS</h2>
+            <p>Construção Civil no Brasil • ordem lógica e cronológica • legislação • ABNT • boas práticas</p>
+        </div>
+
+        <div class="indice-rapido">
+            <h4>Navegação rápida:</h4>
+            <div class="indice-grid">
+                <a href="#viabilidade">1. Viabilidade</a>
+                <a href="#regularizacao">2. Regularização</a>
+                <a href="#projetos">3. Projetos</a>
+                <a href="#licenciamento">4. Licenciamento</a>
+                <a href="#planejamento">5. Planejamento</a>
+                <a href="#residuos">6. Resíduos</a>
+                <a href="#bim">7. BIM</a>
+                <a href="#sistemas-construtivos">8. Sistemas Construtivos</a>
+                <a href="#organograma">9. Organograma</a>
+                <a href="#execucao">10. Execução</a>
+                <a href="#fundacoes">11. Fundações</a>
+                <a href="#estrutura">12. Estrutura</a>
+                <a href="#alvenaria">13. Alvenaria</a>
+                <a href="#cobertura">14. Cobertura</a>
+                <a href="#instalacoes">15. Instalações</a>
+                <a href="#revestimentos">16. Revestimentos</a>
+                <a href="#pisos">17. Pisos</a>
+                <a href="#esquadrias">18. Esquadrias</a>
+                <a href="#pintura">19. Pintura</a>
+                <a href="#impermeabilizacao">20. Impermeabilização</a>
+                <a href="#complementares">21. Complementares</a>
+                <a href="#testes">22. Testes</a>
+                <a href="#documentacao">23. Documentação</a>
+                <a href="#habite-se">24. Habite-se</a>
+                <a href="#garantias">25. Garantias</a>
+                <a href="#cronograma">Cronograma</a>
+            </div>
+        </div>
+
+        <!-- Seção 1: VIABILIDADE -->
+        <section id="viabilidade" class="guia-section">
+            <h3>1. ESTUDO DE VIABILIDADE DO EMPREENDIMENTO</h3>
+            <p><em>Antes de qualquer projeto, análise multidisciplinar.</em></p>
+            <h4>1.1 Análise legal do terreno</h4>
+            <ul>
+                <li>Zoneamento urbano (Plano Diretor)</li>
+                <li>Uso permitido do solo</li>
+                <li>Taxa de ocupação e coeficiente de aproveitamento</li>
+                <li>Recuos obrigatórios e gabarito de altura</li>
+                <li>Áreas de preservação permanente (APP) e outorga onerosa</li>
+            </ul>
+            <p><strong>Normas e leis aplicáveis:</strong> Lei de Uso e Ocupação do Solo municipal, Código de Obras municipal, Lei Federal nº 6.766/1979, Lei Federal nº 12.651/2012.</p>
+
+            <h4>1.2 Estudos técnicos preliminares</h4>
+            <ul>
+                <li>Levantamento topográfico planialtimétrico e cadastral (NBR 13133)</li>
+                <li>Estudo geotécnico (sondagem SPT, CPT ou ensaios especiais) (NBR 6484, NBR 8036)</li>
+                <li>Estudo de impacto de vizinhança (EIV), quando exigido</li>
+                <li>Estudo ambiental (EIA/RIMA) para empreendimentos de grande porte</li>
+            </ul>
+
+            <h4>1.3 Viabilidade econômico-financeira</h4>
+            <ul>
+                <li>Estimativa preliminar de custos com base em CUB/SCIP</li>
+                <li>Análise de mercado (velocidade de vendas, público-alvo)</li>
+                <li>Fluxo de caixa projetado e TIR (Taxa Interna de Retorno)</li>
+            </ul>
+        </section>
+
+        <!-- Seção 2: REGULARIZAÇÃO PROFISSIONAL -->
+        <section id="regularizacao" class="guia-section">
+            <h3>2. REGULARIZAÇÃO PROFISSIONAL E RESPONSABILIDADE TÉCNICA</h3>
+            <p>Todo projeto e execução devem possuir responsável técnico legalmente habilitado, com registro no respectivo conselho profissional.</p>
+            
+            <h4>2.1 Engenheiros e Arquitetos</h4>
+            <ul>
+                <li><strong>CREA</strong> (Conselho Regional de Engenharia e Agronomia) – para engenheiros civis, engenheiros de segurança do trabalho, etc.</li>
+                <li><strong>CAU</strong> (Conselho de Arquitetura e Urbanismo) – para arquitetos e urbanistas.</li>
+                <li><strong>Documentos obrigatórios:</strong> ART (Anotação de Responsabilidade Técnica) no CREA ou RRT (Registro de Responsabilidade Técnica) no CAU.</li>
+            </ul>
+            <p><strong>Legislação:</strong> Lei nº 6.496/1977 (ART), Lei nº 12.378/2010 (CAU).</p>
+
+            <h4>2.2 Técnicos de Edificações (Nível Técnico)</h4>
+            <ul>
+                <li><strong>CFT</strong> (Conselho Federal dos Técnicos Industriais) – regulamenta a profissão de Técnico de Edificações.</li>
+                <li>Atribuições (conforme Lei nº 5.524/68 e Decreto nº 90.922/85):
+                    <ul>
+                        <li>Elaborar projetos de edificações de até 80 m² ou de reformas sem mudança de estrutura (dentro dos limites legais).</li>
+                        <li>Executar, fiscalizar e orientar tecnicamente obras de edificações, loteamentos, terraplanagem, etc., dentro de sua competência.</li>
+                        <li>Realizar levantamentos topográficos, planejamento e orçamento de obras.</li>
+                        <li>Atuar como responsável técnico por obras de pequeno e médio porte, conforme resoluções do CFT e legislações municipais.</li>
+                    </ul>
+                </li>
+                <li><strong>Documento obrigatório:</strong> TRT (Termo de Responsabilidade Técnica) no CFT.</li>
+            </ul>
+            <p><strong>Legislação complementar:</strong> Resoluções CFT nº 107/2015 (atribuições), Lei nº 13.639/2018 (regulamentação da profissão).</p>
+
+            <h4>2.3 Profissionais de Nível Médio (outros)</h4>
+            <p>Técnicos em Segurança do Trabalho (NR 18), Técnicos em Estradas, etc., também podem atuar em suas áreas específicas, sempre com registro no conselho correspondente (quando aplicável).</p>
+
+            <p><strong>Importante:</strong> A responsabilidade técnica deve ser definida conforme o porte da obra e as exigências do CREA/CAU/CFT. Em muitas situações, engenheiros e técnicos atuam de forma complementar: o engenheiro responde pelos cálculos estruturais e projetos complexos, enquanto o técnico pode responder pela execução e pelo planejamento diário.</p>
+        </section>
+
+        <!-- Seção 3: PROJETOS TÉCNICOS -->
+        <section id="projetos" class="guia-section">
+            <h3>3. PROJETOS TÉCNICOS DA OBRA</h3>
+            
+            <h4>3.1 Projeto Arquitetônico</h4>
+            <p>Define layout, implantação, áreas, cortes, fachadas, acessibilidade, conforto ambiental. Normas: NBR 6492, NBR 9050, NBR 15220, Lei 10.098/2000.</p>
+
+            <h4>3.2 Projeto Estrutural</h4>
+            <p>Dimensionamento de fundações, pilares, vigas, lajes, contenções. Normas: NBR 6118 (concreto), NBR 8800 (aço), NBR 7190 (madeira), NBR 6120 (cargas), NBR 6123 (vento).</p>
+
+            <h4>3.3 Projeto de Fundações</h4>
+            <p>Tipos: sapatas, radier, estacas, tubulões, hélice contínua. Norma principal: NBR 6122.</p>
+
+            <h4>3.4 Projeto Hidrossanitário</h4>
+            <p>Abrange água fria, água quente, esgoto, águas pluviais, reservatórios, reuso. Normas: NBR 5626, NBR 7198, NBR 8160, NBR 10844, NBR 13969.</p>
+
+            <h4>3.5 Projeto Elétrico</h4>
+            <p>Abrange circuitos, quadros, aterramento, proteção contra choques, SPDA. Normas: NBR 5410, NBR 5419, NBR 14039.</p>
+
+            <h4>3.6 Projeto de Combate a Incêndio</h4>
+            <p>Aprovado pelo Corpo de Bombeiros. Normas: NBR 9077, NBR 13434, NBR 12693, NBR 13714.</p>
+
+            <h4>3.7 Projeto de Desempenho</h4>
+            <p>Atender à NBR 15575 para todos os sistemas (estrutura, pisos, vedações, cobertura, hidrossanitário).</p>
+        </section>
+
+        <!-- Seção 4: LICENCIAMENTO -->
+        <section id="licenciamento" class="guia-section">
+            <h3>4. LICENCIAMENTO DA OBRA</h3>
+            <p><em>Antes da execução, obtenção de alvarás e licenças.</em></p>
+            <p><strong>Documentos exigidos:</strong> projeto aprovado, ART/RRT/TRT, matrícula do terreno, certidões negativas, comprovante de recolhimento de taxas.</p>
+            <p><strong>Licenças:</strong> Alvará de construção (prefeitura), Licença ambiental (LP, LI, LO), Certidão de uso do solo, Aprovação do Corpo de Bombeiros.</p>
+        </section>
+
+        <!-- Seção 5: PLANEJAMENTO -->
+        <section id="planejamento" class="guia-section">
+            <h3>5. PLANEJAMENTO DA OBRA</h3>
+            
+            <h4>5.1 Orçamento Analítico</h4>
+            <p>Baseado em quantitativos, composições de custos unitários, BDI (Bonificação e Despesas Indiretas).</p>
+            <p><strong>Referências de custos:</strong> SINAPI, SICRO, ORSE, EMOP, TCPO.</p>
+
+            <h4>5.2 Composição de Custos de Mão de Obra</h4>
+            <ul>
+                <li>Salário-base da categoria (convenção coletiva)</li>
+                <li>Encargos sociais (sobre salário): INSS, FGTS, SESI, SENAI, SEBRAE, INCRA, salário-educação, 13º, férias, aviso prévio, indenização trabalhista – total pode chegar a 80-120%</li>
+                <li>Lei da terceirização (Lei 13.429/2017) e responsabilidade solidária</li>
+            </ul>
+
+            <h4>5.3 Produtividade e Índices (RUP, IP)</h4>
+            <p><strong>RUP (Razão Unitária de Produção)</strong> = Homens-hora (Hh) / Quantidade de serviço (m², m³, un)</p>
+            <div class="exemplo-formula">
+                Exemplo: Alvenaria de vedação: equipe 2 pedreiros + 2 serventes (32 Hh/dia) produz 25 m²/dia → RUP = 32 / 25 = 1,28 Hh/m²
+            </div>
+            <p><strong>IP (Índice de Produtividade)</strong> = Recurso utilizado / Produto obtido (visão complementar).</p>
+            <p><strong>Consumo Unitário de Materiais (CUM)</strong> = Quantidade de material consumido / Quantidade de serviço executado.</p>
+            <div class="exemplo-formula">
+                Exemplo: Contrapiso: previsto 0,05 m³/m², real 5,8 m³ para 100 m² → CUM real = 0,058 m³/m² (16% acima)
+            </div>
+
+            <h4>5.4 Histograma de Mão de Obra</h4>
+            <p>Representação gráfica da distribuição da força de trabalho ao longo do tempo. Passos:</p>
+            <ol>
+                <li>Listar atividades com durações</li>
+                <li>Dimensionar equipes por atividade</li>
+                <li>Distribuir no tempo</li>
+                <li>Plotar gráfico de barras (período × quantidade)</li>
+            </ol>
+            <p><strong>Exemplo (trecho de 4 semanas):</strong></p>
+            <table class="tabela-indicadores">
+                <tr><th>Atividade</th><th>Sem 1</th><th>Sem 2</th><th>Sem 3</th><th>Sem 4</th></tr>
+                <tr><td>Fundação</td><td>4 ped</td><td>4 ped</td><td>-</td><td>-</td></tr>
+                <tr><td>Estrutura</td><td>-</td><td>6 ped</td><td>8 ped</td><td>8 ped</td></tr>
+                <tr><td>Alvenaria</td><td>-</td><td>-</td><td>4 ped</td><td>6 ped</td></tr>
+                <tr><td><strong>Total Pedreiros</strong></td><td>4</td><td>10</td><td>12</td><td>14</td></tr>
+                <tr><td>Serventes</td><td>2</td><td>4</td><td>6</td><td>6</td></tr>
+            </table>
+            <p>Análise: pico na semana 4 (20 homens); necessidade de contratação progressiva.</p>
+
+            <h4>5.5 Curva ABC para Materiais</h4>
+            <p>Classifica insumos por impacto financeiro (Pareto 80/20):</p>
+            <ul>
+                <li><strong>Classe A:</strong> 20% itens → 80% custo (foco total)</li>
+                <li><strong>Classe B:</strong> 30% itens → 15% custo (atenção média)</li>
+                <li><strong>Classe C:</strong> 50% itens → 5% custo (controle simples)</li>
+            </ul>
+            <p><strong>Passo a passo:</strong></p>
+            <ol>
+                <li>Listar insumos com quantidades e preços</li>
+                <li>Calcular custo total (qtd × preço)</li>
+                <li>Ordenar decrescentemente por custo total</li>
+                <li>Calcular % individual e % acumulada</li>
+                <li>Classificar: A (até 80%), B (80-95%), C (>95%)</li>
+            </ol>
+            <p><strong>Exemplo (trecho):</strong></p>
+            <table class="tabela-indicadores">
+                <tr><th>Item</th><th>Custo (R$)</th><th>% Ind.</th><th>% Acum.</th><th>Classe</th></tr>
+                <tr><td>Aço CA-50</td><td>155.430</td><td>21,4%</td><td>21,4%</td><td>A</td></tr>
+                <tr><td>Forma Madeirit</td><td>89.592</td><td>12,4%</td><td>33,8%</td><td>A</td></tr>
+                <tr><td>Concreto usinado</td><td>78.500</td><td>10,8%</td><td>44,6%</td><td>A</td></tr>
+                <tr><td>Alvenaria blocos</td><td>68.265</td><td>9,4%</td><td>54,0%</td><td>A</td></tr>
+                <tr><td>Telhas</td><td>45.320</td><td>6,3%</td><td>60,3%</td><td>A</td></tr>
+                <tr><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+            </table>
+            <p><strong>Ações gerenciais:</strong> Classe A → negociação agressiva, estoque controlado; Classe B → gestão normal; Classe C → compra por demanda.</p>
+
+            <h4>5.6 Cronograma físico-financeiro</h4>
+            <p>Ferramentas: Curva S, Método do Caminho Crítico (CPM), Diagrama de Gantt, Linha de Balanço. Softwares: MS Project, Primavera, Planner.</p>
+
+            <!-- Subseção 5.7: Cronograma de Gantt Detalhado -->
+            <h4>5.7 Cronograma de Gantt – Planejamento Visual das Atividades</h4>
+            <p>O <strong>Diagrama de Gantt</strong> é a ferramenta mais difundida para representar graficamente a sequência e a duração das atividades de uma obra. Ele permite visualizar:</p>
+            <ul>
+                <li>Datas de início e fim de cada tarefa;</li>
+                <li>Dependências entre atividades (ex.: só iniciar alvenaria após estrutura);</li>
+                <li>Acompanhamento do avanço físico (barras de progresso).</li>
+            </ul>
+            <p><strong>Como construir um cronograma de Gantt básico:</strong></p>
+            <ol>
+                <li>Listar todas as atividades da obra (EAP – Estrutura Analítica do Projeto).</li>
+                <li>Estimar a duração de cada atividade (com base em RUP e quantidades).</li>
+                <li>Definir as relações de precedência (o que vem antes, o que pode ser paralelo).</li>
+                <li>Calcular as datas (início e fim) utilizando o método do caminho crítico (CPM) ou software.</li>
+                <li>Plotar as barras em uma escala de tempo (dias, semanas ou meses).</li>
+            </ol>
+
+            <p><strong>Exemplo simplificado de Gantt para as primeiras semanas de uma obra:</strong></p>
+            <div class="gantt-container">
+                <table class="gantt-tabela">
+                    <thead>
+                        <tr>
+                            <th>Atividade</th>
+                            <th>Duração (dias)</th>
+                            <th>Sem 1</th>
+                            <th>Sem 2</th>
+                            <th>Sem 3</th>
+                            <th>Sem 4</th>
+                            <th>Sem 5</th>
+                            <th>Sem 6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="gantt-atividade">Serviços preliminares</td>
+                            <td class="gantt-duracao">5</td>
+                            <td colspan="2"><span class="gantt-barra" style="width:80%;">████</span></td>
+                            <td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td class="gantt-atividade">Fundações</td>
+                            <td class="gantt-duracao">15</td>
+                            <td></td>
+                            <td colspan="3"><span class="gantt-barra" style="width:100%;">████████</span></td>
+                            <td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td class="gantt-atividade">Estrutura (pilares/vigas)</td>
+                            <td class="gantt-duracao">20</td>
+                            <td></td><td></td>
+                            <td colspan="4"><span class="gantt-barra" style="width:100%;">██████████</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="gantt-atividade">Alvenaria</td>
+                            <td class="gantt-duracao">18</td>
+                            <td></td><td></td><td></td>
+                            <td colspan="3"><span class="gantt-barra" style="width:90%;">███████</span></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 10px; font-size:0.9rem;">* As barras representam o período de execução de cada atividade. Observe a sobreposição (atividades em paralelo) e a sequência lógica.</p>
+
+            <p><strong>Relação com outros indicadores:</strong> O Gantt deve ser elaborado com base nos <strong>RUP</strong> e no <strong>histograma</strong> (para garantir que a equipe dimensionada seja suficiente). O avanço físico do Gantt alimenta a <strong>curva S</strong> e o controle financeiro.</p>
+            <p><strong>Software:</strong> Atualmente, é recomendável utilizar ferramentas como MS Project, LibreProject, Planner, ou até mesmo Excel para pequenas obras. O importante é manter o cronograma atualizado (linha de base x realizado).</p>
+        </section>
+
+        <!-- NOVA SEÇÃO 6: GESTÃO DE RESÍDUOS (CONAMA 307) -->
+        <section id="residuos" class="guia-section">
+            <h3>6. GESTÃO DE RESÍDUOS DA CONSTRUÇÃO CIVIL (CONAMA 307)</h3>
+            <p>A Resolução CONAMA nº 307/2002 (alterada pelas Resoluções 348/2004, 431/2011, 448/2012 e 469/2015) estabelece diretrizes, critérios e procedimentos para a gestão dos resíduos da construção civil, visando a minimização dos impactos ambientais. A gestão adequada é obrigatória e deve ser incorporada desde o planejamento até a operação pós-obra.</p>
+
+            <h4>6.1 Classificação dos Resíduos (CONAMA 307)</h4>
+            <p>Os resíduos são classificados em quatro classes, conforme sua origem e possibilidade de reutilização ou reciclagem:</p>
+            <table class="tabela-indicadores">
+                <tr><th>Classe</th><th>Descrição</th><th>Exemplos</th><th>Destinação</th></tr>
+                <tr><td><strong>Classe A</strong></td><td>Resíduos reutilizáveis ou recicláveis como agregados</td><td>Argamassa, concreto, blocos, telhas, solo</td><td>Reutilização ou reciclagem (usinas de reciclagem)</td></tr>
+                <tr><td><strong>Classe B</strong></td><td>Resíduos recicláveis para outras destinações</td><td>Plástico, papel, papelão, metais, vidros, madeira</td><td>Logística reversa ou reciclagem</td></tr>
+                <tr><td><strong>Classe C</strong></td><td>Resíduos sem tecnologia ou aplicação econômica para reciclagem/recuperação</td><td>Gesso (até 2011 era classe D, hoje classe C se reciclável)</td><td>Armazenamento ou disposição final (aterro classe C)</td></tr>
+                <tr><td><strong>Classe D</strong></td><td>Resíduos perigosos ou contaminados</td><td>Tintas, solventes, óleos, amianto, produtos químicos</td><td>Empresas especializadas licenciadas</td></tr>
+            </table>
+
+            <h4>6.2 Plano de Gerenciamento de Resíduos da Construção Civil (PGRCC)</h4>
+            <p>Exigido em obras com geração significativa de resíduos (geralmente acima de 50 m² ou conforme legislação municipal). Deve conter:</p>
+            <ul>
+                <li>Caracterização dos resíduos (estimativa de volumes por classe).</li>
+                <li>Definição das áreas de triagem e armazenamento temporário no canteiro.</li>
+                <li>Procedimentos para transporte e destinação final (licenciamento das áreas receptoras).</li>
+                <li>Responsável técnico (ART/TRT).</li>
+                <li>Programa de educação ambiental para a equipe.</li>
+            </ul>
+
+            <h4>6.3 Práticas no Canteiro de Obras</h4>
+            <p>Implementar a gestão eficiente exige ações diárias:</p>
+            <ul>
+                <li><strong>Baias de resíduos:</strong> áreas identificadas por classe (A, B, C, D), com contenção e proteção.</li>
+                <li><strong>Redução na fonte:</strong> otimização de cortes, uso de blocos de medidas que minimizem quebras, pré-fabricação.</li>
+                <li><strong>Reutilização:</strong> uso de entulho classe A em sub-bases de pisos (após britagem) ou em aterros.</li>
+                <li><strong>Logística reversa:</strong> devolução de embalagens de tintas, solventes, sacos de cimento aos fornecedores.</li>
+                <li><strong>Destinação documentada:</strong> manter registros de pesagem, notas fiscais de transporte e comprovantes de destinação (controle de lastro ambiental).</li>
+            </ul>
+
+            <h4>6.4 Indicadores de Gestão de Resíduos</h4>
+            <p>Para monitorar a eficiência da gestão, utilize:</p>
+            <ul>
+                <li><strong>Taxa de geração de resíduos (TGR)</strong> = m³ de resíduo / m² de área construída. Referência: 0,10 a 0,20 m³/m².</li>
+                <li><strong>Índice de reciclagem</strong> = (resíduo reciclado / total gerado) × 100. Meta > 50%.</li>
+                <li><strong>Custo com destinação</strong> = R$/m³ de resíduo (inclui transporte + taxa de recebimento).</li>
+            </ul>
+
+            <h4>6.5 Responsabilidades Legais</h4>
+            <p>O gerador (construtor) é responsável pelos resíduos desde a geração até a destinação final. A não conformidade pode gerar:</p>
+            <ul>
+                <li>Multas ambientais (Lei 9.605/98 – Crimes Ambientais).</li>
+                <li>Embargo da obra.</li>
+                <li>Responsabilização civil e criminal do responsável técnico.</li>
+            </ul>
+            <p><strong>Normas complementares:</strong> NBR 15112 (resíduos da construção – áreas de triagem), NBR 15113 (aterros), NBR 15114 (áreas de reciclagem).</p>
+        </section>
+
+        <!-- NOVA SEÇÃO 7: BUILDING INFORMATION MODELING (BIM) -->
+        <section id="bim" class="guia-section">
+            <h3>7. BUILDING INFORMATION MODELING (BIM) – MODELAGEM DA INFORMAÇÃO</h3>
+            <p>O BIM é um conjunto de processos e tecnologias que permite a criação e gestão de representações digitais das características físicas e funcionais de uma edificação. No Brasil, a Estratégia Nacional de Disseminação do BIM (Decreto nº 10.306/2020) tornou obrigatório o uso em obras públicas federais desde 2021, com cronograma de expansão. Integrar BIM ao fluxo de trabalho é essencial para coordenação, redução de perdas e maior produtividade.</p>
+
+            <h4>7.1 Dimensões do BIM</h4>
+            <table class="tabela-indicadores">
+                <tr><th>Dimensão</th><th>Descrição</th><th>Aplicação na obra</th></tr>
+                <tr><td><strong>3D</strong></td><td>Modelagem geométrica e espacial</td><td>Visualização, detecção de interferências (clash detection) entre projetos (estrutura x hidráulica x elétrica).</td></tr>
+                <tr><td><strong>4D</strong></td><td>Planejamento (tempo)</td><td>Vinculação do modelo ao cronograma (Gantt), simulação da sequência construtiva.</td></tr>
+                <tr><td><strong>5D</strong></td><td>Orçamento (custos)</td><td>Extração automática de quantitativos, atualização de custos em tempo real.</td></tr>
+                <tr><td><strong>6D</strong></td><td>Sustentabilidade</td><td>Análise energética, ciclo de vida dos materiais, gestão de resíduos.</td></tr>
+                <tr><td><strong>7D</strong></td><td>Operação e manutenção</td><td>Entrega do modelo As Built para o proprietário (facility management).</td></tr>
+            </table>
+
+            <h4>7.2 Aplicações Práticas no Ciclo da Obra</h4>
+            <h5>Na fase de Projeto (3D)</h5>
+            <ul>
+                <li>Modelo único federado com todas as disciplinas (arquitetura, estrutura, MEP).</li>
+                <li>Detecção automática de interferências (ex.: viga passando dentro de shaft).</li>
+                <li>Extração de plantas, cortes e detalhes diretamente do modelo (redução de erros).</li>
+            </ul>
+            <h5>No Planejamento (4D e 5D)</h5>
+            <ul>
+                <li>Simulação da construção passo a passo (4D) para validação do sequenciamento.</li>
+                <li>Geração de quantitativos precisos (5D) a partir do modelo, alimentando orçamento e curva ABC.</li>
+                <li>Integração com softwares de planejamento (MS Project, Primavera).</li>
+            </ul>
+            <h5>Na Execução</h5>
+            <ul>
+                <li>Utilização do modelo em campo via tablets (BIM 360, Revizto) para consulta e conferência.</li>
+                <li>Atualização do modelo conforme o executado (As Built).</li>
+                <li>Gestão de não conformidades (issues) diretamente no modelo.</li>
+            </ul>
+            <h5>Na Entrega (7D)</h5>
+            <ul>
+                <li>Manual do proprietário digital, integrado ao modelo (especificações, garantias, contratos de manutenção).</li>
+                <li>Facilita a gestão do edifício ao longo da vida útil.</li>
+            </ul>
+
+            <h4>7.3 Níveis de Desenvolvimento (LOD)</h4>
+            <p>Define o grau de detalhamento da informação. Segundo a especificação americana (LOD Specification), temos:</p>
+            <ul>
+                <li><strong>LOD 100:</strong> modelo conceitual (massas).</li>
+                <li><strong>LOD 200:</strong> elementos genéricos com quantidades aproximadas.</li>
+                <li><strong>LOD 300:</strong> elementos precisos para construção (detalhamento).</li>
+                <li><strong>LOD 350:</strong> elementos com interfaces com outros sistemas.</li>
+                <li><strong>LOD 400:</strong> modelo executivo (fabricação e montagem).</li>
+                <li><strong>LOD 500:</strong> modelo As Built (como construído).</li>
+            </ul>
+            <p>No Brasil, a ABNT publicou a NBR 15965 (série) sobre classificação de informação na construção, aplicável ao BIM.</p>
+
+            <h4>7.4 Impactos na Produtividade e Gestão</h4>
+            <ul>
+                <li><strong>Redução de retrabalho:</strong> detecção de interferências antes da execução (economia de até 10% do custo da obra).</li>
+                <li><strong>Orçamentos mais precisos:</strong> quantitativos extraídos do modelo (erro < 1% versus até 5% em métodos tradicionais).</li>
+                <li><strong>Melhor comunicação:</strong> visualização 3D facilita entendimento da equipe e reduz dúvidas.</li>
+                <li><strong>Integração com a gestão de resíduos:</strong> modelo permite calcular volumes precisos de materiais, reduzindo sobras.</li>
+            </ul>
+
+            <h4>7.5 Softwares e Padrões</h4>
+            <p>Softwares comuns: Revit, ArchiCAD, Tekla, Navisworks (coordenação), Solibri (verificação de regras). Padrões de interoperabilidade: IFC (Industry Foundation Classes) e BCF (BIM Collaboration Format).</p>
+            <p><strong>Referências normativas:</strong> NBR 15965 (classificação), Decreto 10.306/2020 (BIM em obras públicas).</p>
+        </section>
+
+        <!-- Seção 8: SISTEMAS CONSTRUTIVOS (antiga 6) -->
+        <section id="sistemas-construtivos" class="guia-section">
+            <h3>8. SISTEMAS CONSTRUTIVOS INOVADORES E INDUSTRIALIZADOS</h3>
+            <h4>8.1 Light Steel Framing (LSF)</h4>
+            <p>Estrutura em perfis de aço galvanizado, fechamento em chapas. Norma específica: NBR 16970 (partes 1,2,3).</p>
+            <h4>8.2 Wood Framing</h4>
+            <p>Estrutura em madeira. Normas: NBR 15575, NBR 7190.</p>
+            <h4>8.3 Outros sistemas</h4>
+            <p>Painéis pré-moldados, formas de alumínio, contêineres. PBQP-H e SiNAT exigem avaliação técnica (DATec).</p>
+        </section>
+
+        <!-- Seção 9: ORGANOGRAMA (antiga 7) -->
+        <section id="organograma" class="guia-section">
+            <h3>9. ORGANOGRAMA DA MÃO DE OBRA (DIRETA E INDIRETA)</h3>
+            <p>Estrutura típica de equipes em um canteiro de obras de médio porte. A composição varia conforme o porte e complexidade do empreendimento.</p>
+            
+            <div class="organograma">
+                <div class="org-level">
+                    <div class="org-item">
+                        <strong>Gestor da Obra</strong>
+                        <span>Engenheiro ou Técnico Responsável</span>
+                    </div>
+                </div>
+                <div class="org-connector"></div>
+                
+                <div class="org-level">
+                    <div class="org-item">
+                        <strong>Mestre de Obras</strong>
+                        <span>Supervisão geral</span>
+                    </div>
+                </div>
+                <div class="org-connector"></div>
+
+                <div class="org-category">MÃO DE OBRA DIRETA (Produção)</div>
+                <div class="org-row">
+                    <div class="org-item">
+                        <strong>Pedreiros</strong>
+                        <span>Alvenaria, revestimentos, concretagem</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Carpinteiros</strong>
+                        <span>Formas, estruturas de madeira</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Armadores</strong>
+                        <span>Armação de aço</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Serventes</strong>
+                        <span>Apoio geral</span>
+                    </div>
+                </div>
+                <div class="org-row" style="margin-top: 15px;">
+                    <div class="org-item">
+                        <strong>Eletricistas</strong>
+                        <span>Instalações elétricas</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Encanadores</strong>
+                        <span>Instalações hidráulicas</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Pintores</strong>
+                        <span>Pintura e acabamentos</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Telhadistas</strong>
+                        <span>Cobertura</span>
+                    </div>
+                </div>
+
+                <div class="org-category" style="margin-top: 30px;">MÃO DE OBRA INDIRETA (Apoio e Gestão)</div>
+                <div class="org-row">
+                    <div class="org-item">
+                        <strong>Técnico em Segurança</strong>
+                        <span>NR-18, EPIs, treinamentos</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Almoxarife</strong>
+                        <span>Controle de estoque e materiais</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Apontador</strong>
+                        <span>Medição de produção, horas trabalhadas</span>
+                    </div>
+                </div>
+                <div class="org-row" style="margin-top: 15px;">
+                    <div class="org-item">
+                        <strong>Laboratorista</strong>
+                        <span>Controle tecnológico (concreto, solo)</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Topógrafo</strong>
+                        <span>Locação, nivelamento</span>
+                    </div>
+                    <div class="org-item">
+                        <strong>Administrativo</strong>
+                        <span>RH, compras, documentação</span>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Observações:</strong></p>
+            <ul>
+                <li>Em obras pequenas, um mesmo profissional pode acumular funções (ex.: mestre acumula apontamento).</li>
+                <li>Em obras grandes, há subdivisões: encarregados por frente de serviço, coordenadores de produção, etc.</li>
+                <li>A mão de obra indireta é essencial para suporte, qualidade e cumprimento de normas.</li>
+            </ul>
+        </section>
+
+        <!-- Seção 10: EXECUÇÃO (antiga 8) -->
+        <section id="execucao" class="guia-section">
+            <h3>10. EXECUÇÃO DA OBRA (SEQUÊNCIA CONSTRUTIVA)</h3>
+            <h4>10.1 Serviços preliminares</h4>
+            <p>Limpeza do terreno, tapume, instalação de canteiro, ligações provisórias. Norma NR 18.</p>
+        </section>
+
+        <!-- Seção 11: FUNDAÇÕES (antiga 9) -->
+        <section id="fundacoes" class="guia-section">
+            <h3>11. FUNDAÇÕES</h3>
+            <p>Execução conforme projeto. Controle tecnológico: profundidade, capacidade de carga, concreto. Norma NBR 6122.</p>
+            <h4>Indicadores de produtividade típicos:</h4>
+            <table class="tabela-indicadores">
+                <tr><th>Serviço</th><th>Unidade</th><th>RUP médio (Hh/un)</th><th>Composição</th></tr>
+                <tr><td>Escavação manual</td><td>m³</td><td>2,5</td><td>1 escavador</td></tr>
+                <tr><td>Escavação mecanizada</td><td>m³</td><td>0,1</td><td>1 operador</td></tr>
+                <tr><td>Forma de sapata</td><td>m²</td><td>1,5</td><td>1 carpinteiro</td></tr>
+                <tr><td>Armação (aço)</td><td>t</td><td>12,0</td><td>1 armador</td></tr>
+                <tr><td>Concreto fundação</td><td>m³</td><td>2,0</td><td>4 ped + 2 serv</td></tr>
+            </table>
+            <p><strong>Exemplo de controle:</strong> Se para 45 m³ de concreto foram usadas 110 Hh, RUP real = 2,44 Hh/m³ (meta 2,0). Identificar causas: produtividade baixa, necessidade de treinamento.</p>
+        </section>
+
+        <!-- Seção 12: ESTRUTURA (antiga 10) -->
+        <section id="estrutura" class="guia-section">
+            <h3>12. ESTRUTURA</h3>
+            <p>Sequência: pilares, vigas, lajes. Controle tecnológico do concreto. Normas: NBR 5738, NBR 5739, NBR 14931.</p>
+            <h4>Indicadores de produtividade:</h4>
+            <table class="tabela-indicadores">
+                <tr><th>Serviço</th><th>Unidade</th><th>RUP médio (Hh/un)</th></tr>
+                <tr><td>Formas (laje)</td><td>m²</td><td>1,2</td></tr>
+                <tr><td>Armação</td><td>t</td><td>10,0</td></tr>
+                <tr><td>Concreto (lançamento)</td><td>m³</td><td>1,8</td></tr>
+            </table>
+            <div class="exemplo-formula">
+                Exemplo: 800 m² de laje com RUP 1,2 → Hh necessárias = 960 Hh. Equipe de 8 pedreiros (8h/dia) em 15 dias = 960 Hh → dimensionamento ok.
+            </div>
+        </section>
+
+        <!-- Seção 13: ALVENARIA (antiga 11) -->
+        <section id="alvenaria" class="guia-section">
+            <h3>13. ALVENARIA</h3>
+            <p>Tipos: vedação (blocos cerâmicos, concreto) e estrutural. Normas: NBR 15961, NBR 15270, NBR 8545.</p>
+            <h4>Índices de produtividade referenciais:</h4>
+            <table class="tabela-indicadores">
+                <tr><th>Tipo de alvenaria</th><th>Equipe</th><th>Produtividade (m²/dia)</th><th>RUP (Hh/m²)</th></tr>
+                <tr><td>Bloco cerâmico 9x19x19</td><td>2 ped + 1 serv</td><td>22-28</td><td>0,86-1,09</td></tr>
+                <tr><td>Bloco concreto 14x19x39</td><td>2 ped + 2 serv</td><td>18-24</td><td>1,33-1,78</td></tr>
+                <tr><td>Tijolo maciço</td><td>2 ped + 2 serv</td><td>12-16</td><td>2,00-2,67</td></tr>
+            </table>
+            <p><strong>Fórmula para dimensionamento de equipe:</strong></p>
+            <div class="exemplo-formula">
+                Nº pedreiros = (Quantidade × RUP) / (Horas disponíveis × Rendimento)<br>
+                Ex.: 500 m² em 20 dias úteis, RUP 1,0 Hh/m², 8h/dia → Hh total = 500; Hh disponíveis por pedreiro = 160; pedreiros = 500/160 = 3,1 → 4 pedreiros.
+            </div>
+        </section>
+
+        <!-- Seção 14: COBERTURA (antiga 12) -->
+        <section id="cobertura" class="guia-section">
+            <h3>14. COBERTURA</h3>
+            <p>Componentes: estrutura (madeira, metálica), telhas, impermeabilização, rufos, calhas. Normas: NBR 15575, NBR 9575.</p>
+            <h4>Produtividade típica:</h4>
+            <ul>
+                <li>Estrutura madeira: 0,8 Hh/m²</li>
+                <li>Telhamento: 0,4 Hh/m² (2 telhadistas)</li>
+            </ul>
+        </section>
+
+        <!-- Seção 15: INSTALAÇÕES (antiga 13) -->
+        <section id="instalacoes" class="guia-section">
+            <h3>15. INSTALAÇÕES</h3>
+            <p>Executadas após estrutura e alvenaria. Inclui: elétrica, hidráulica, gás, dados. Normas: NBR 5410, NBR 5626, NBR 8160, NBR 15526.</p>
+            <h4>Produtividade:</h4>
+            <ul>
+                <li>Elétrica (ponto): 0,8 Hh/ponto</li>
+                <li>Hidráulica (ponto): 1,2 Hh/ponto</li>
+            </ul>
+        </section>
+
+        <!-- Seção 16: REVESTIMENTOS (antiga 14) -->
+        <section id="revestimentos" class="guia-section">
+            <h3>16. REVESTIMENTOS</h3>
+            <p>Chapisco, emboço, reboco, cerâmica. Normas: NBR 13749, NBR 13753.</p>
+            <table class="tabela-indicadores">
+                <tr><th>Serviço</th><th>Produtividade (m²/dia)</th><th>RUP (Hh/m²)</th></tr>
+                <tr><td>Chapisco</td><td>80-100</td><td>0,08-0,10</td></tr>
+                <tr><td>Emboço (grossa)</td><td>18-25</td><td>0,64-0,89</td></tr>
+                <tr><td>Reboco (fina)</td><td>25-35</td><td>0,23-0,32</td></tr>
+                <tr><td>Azulejo</td><td>10-15</td><td>0,53-0,80</td></tr>
+            </table>
+        </section>
+
+        <!-- Seção 17: PISOS (antiga 15) -->
+        <section id="pisos" class="guia-section">
+            <h3>17. PISOS</h3>
+            <p>Tipos: cerâmico, porcelanato, concreto, madeira, vinílico. Norma NBR 15575-3.</p>
+            <ul>
+                <li>Contrapiso: 0,4 Hh/m²</li>
+                <li>Cerâmica: 0,6 Hh/m²</li>
+            </ul>
+        </section>
+
+        <!-- Seção 18: ESQUADRIAS (antiga 16) -->
+        <section id="esquadrias" class="guia-section">
+            <h3>18. ESQUADRIAS</h3>
+            <p>Portas, janelas (alumínio, madeira, PVC). Normas NBR 10821, NBR 15930.</p>
+        </section>
+
+        <!-- Seção 19: PINTURA (antiga 17) -->
+        <section id="pintura" class="guia-section">
+            <h3>19. PINTURA</h3>
+            <p>Etapas: preparação, selador, massa, pintura. Norma NBR 13245.</p>
+            <table class="tabela-indicadores">
+                <tr><th>Demão</th><th>Produtividade (m²/dia)</th><th>RUP (Hh/m²)</th></tr>
+                <tr><td>Selador</td><td>120-150</td><td>0,05-0,07</td></tr>
+                <tr><td>Massa corrida</td><td>40-50</td><td>0,16-0,20</td></tr>
+                <tr><td>Pintura (1ª)</td><td>100-120</td><td>0,07-0,08</td></tr>
+                <tr><td>Pintura (2ª)</td><td>120-140</td><td>0,06-0,07</td></tr>
+            </table>
+        </section>
+
+        <!-- Seção 20: IMPERMEABILIZAÇÃO (antiga 18) -->
+        <section id="impermeabilizacao" class="guia-section">
+            <h3>20. IMPERMEABILIZAÇÃO</h3>
+            <p>Lajes, banheiros, fundações, reservatórios. Normas NBR 9574, NBR 9575.</p>
+        </section>
+
+        <!-- Seção 21: COMPLEMENTARES (antiga 19) -->
+        <section id="complementares" class="guia-section">
+            <h3>21. INSTALAÇÕES COMPLEMENTARES</h3>
+            <p>Ar condicionado, aquecimento solar, automação, CFTV, SPDA.</p>
+        </section>
+
+        <!-- Seção 22: TESTES (antiga 20) -->
+        <section id="testes" class="guia-section">
+            <h3>22. TESTES E COMISSIONAMENTO</h3>
+            <ul>
+                <li>Estanqueidade hidráulica (teste de pressão)</li>
+                <li>Continuidade e isolamento elétrico</li>
+                <li>Teste de funcionamento de bombas</li>
+                <li>Ensaios de carga (quando necessário)</li>
+            </ul>
+        </section>
+
+        <!-- Seção 23: DOCUMENTAÇÃO (antiga 21) -->
+        <section id="documentacao" class="guia-section">
+            <h3>23. DOCUMENTAÇÃO FINAL</h3>
+            <p>As Built, Manual do proprietário (NBR 14037), certificados de materiais, ARTs/TRTs.</p>
+        </section>
+
+        <!-- Seção 24: HABITE-SE (antiga 22) -->
+        <section id="habite-se" class="guia-section">
+            <h3>24. HABITE-SE</h3>
+            <p>Documento emitido pela prefeitura após vistoria, comprovando conformidade.</p>
+        </section>
+
+        <!-- Seção 25: GARANTIAS (antiga 23) -->
+        <section id="garantias" class="guia-section">
+            <h3>25. GARANTIAS DA OBRA</h3>
+            <p>Reguladas pelo Código Civil e CDC. Prazos típicos (NBR 15575):</p>
+            <ul>
+                <li>5 anos: estrutura e elementos que comprometam solidez</li>
+                <li>3 anos: vedações, pisos, revestimentos</li>
+                <li>1 ano: hidrossanitário, pintura</li>
+                <li>90 dias: vícios aparentes (CDC)</li>
+            </ul>
+        </section>
+
+        <!-- Cronograma resumido -->
+        <section id="cronograma" class="guia-section cronograma-box">
+            <h3> CRONOGRAMA TÉCNICO RESUMIDO (25 etapas)</h3>
+            <p><strong>Sequência ideal:</strong></p>
+            <ol>
+                <li>Viabilidade</li><li>Levantamentos</li><li>Projetos</li><li>Licenciamento</li><li>Orçamento</li>
+                <li>Planejamento</li><li>Gestão de Resíduos</li><li>BIM</li><li>Sistemas construtivos</li><li>Organograma</li>
+                <li>Canteiro</li><li>Fundações</li><li>Estrutura</li><li>Alvenaria</li><li>Cobertura</li>
+                <li>Instalações</li><li>Revestimentos</li><li>Pisos</li><li>Esquadrias</li><li>Pintura</li>
+                <li>Impermeabilização</li><li>Complementares</li><li>Testes</li><li>Documentação</li><li>Habite-se</li>
+                <li>Entrega</li>
+            </ol>
+        </section>
+
+        <!-- Tabela resumo de índices de produtividade -->
+        <section class="guia-section">
+            <h3> TABELA RESUMO DE ÍNDICES DE PRODUTIVIDADE</h3>
+            <table class="tabela-indicadores">
+                <tr><th>Etapa</th><th>Serviço</th><th>Unidade</th><th>RUP médio (Hh/un)</th></tr>
+                <tr><td>Preliminares</td><td>Locação obra</td><td>m²</td><td>0,10</td></tr>
+                <tr><td>Movimento terra</td><td>Escavação manual</td><td>m³</td><td>2,50</td></tr>
+                <tr><td>Fundações</td><td>Sapata (forma)</td><td>m²</td><td>1,50</td></tr>
+                <tr><td>Estrutura</td><td>Forma (laje)</td><td>m²</td><td>1,20</td></tr>
+                <tr><td>Alvenaria</td><td>Bloco cerâmico 9cm</td><td>m²</td><td>1,00</td></tr>
+                <tr><td>Revestimento</td><td>Chapisco</td><td>m²</td><td>0,08</td></tr>
+                <tr><td>Revestimento</td><td>Emboço</td><td>m²</td><td>0,80</td></tr>
+                <tr><td>Piso</td><td>Contrapiso</td><td>m²</td><td>0,40</td></tr>
+                <tr><td>Cobertura</td><td>Telhamento</td><td>m²</td><td>0,40</td></tr>
+                <tr><td>Instalações</td><td>Elétrica (ponto)</td><td>pto</td><td>0,80</td></tr>
+                <tr><td>Pintura</td><td>Massa + Pintura</td><td>m²</td><td>0,35</td></tr>
+            </table>
+            <p><em>Nota: índices podem variar conforme região, tipo de obra e equipe. Recomenda-se ajustar com base em dados históricos da empresa.</em></p>
+        </section>
+
+        <!-- Mensagem final de compartilhamento -->
+        <section class="guia-section" style="background-color: #e6f3ff;">
+            <h3>COMPARTILHE ESTE GUIA</h3>
+            <p>Este guia foi desenvolvido para engenheiros, técnicos de edificações, arquitetos, empresários e todos os profissionais da construção civil. Sinta-se à vontade para compartilhar com sua equipe, alunos e colegas de trabalho. A construção civil brasileira se fortalece com conhecimento técnico de qualidade!</p>
+            <p style="text-align: center; margin-top: 15px;">
+                <strong>Silvanio Gois</strong> - Da estratégia à operação, conectando, processos, pessoas e resultados<br>
+                <a href="https://wa.me/5513988301094" target="_blank" style="color: rgb(39, 98, 141);">WhatsApp: +55 (13) 98830-1094</a> |
+                <a href="https://www.silvaniogois.com.br/" target="_blank" style="color: rgb(39, 98, 141);">www.silvaniogois.com.br</a>
+            </p>
+        </section>
+    </main>
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="copyright">
+                © 2026 Silvanio Gois - Todos os direitos reservados
+            </div>
+            <a href="https://www.silvaniogois.com.br/" target="_blank" rel="noopener noreferrer">
+                🌐 ir ao Site
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const backToTopButton = document.getElementById('backToTop');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
+                }
+            });
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>
